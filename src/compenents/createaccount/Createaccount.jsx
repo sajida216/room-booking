@@ -27,7 +27,7 @@ const Register = () => {
       const data = await res.json();
       alert(data.message);
     } catch (err) {
-      console.error('❌ Error:', err);
+      console.error(' Error:', err);
       alert('Something went wrong');
     }
   };

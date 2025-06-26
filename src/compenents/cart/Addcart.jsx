@@ -14,7 +14,7 @@ const userId = localStorage.getItem('userId');
     const fetchBookings = async () => {
       try {
        const response = await axios.get(`http://localhost:5000/get-cart-items/${userId}`);
-        setBookingData(response.data); // ✅ Now bookingData is an array
+        setBookingData(response.data); //  Now bookingData is an array
       } catch (error) {
         console.error("Error fetching bookings:", error);
       }
@@ -23,7 +23,7 @@ const userId = localStorage.getItem('userId');
     fetchBookings();
   }, []);
 
-   // 🧹 Handle Delete
+   //  Handle Delete
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:5000/addcart/${id}`);
