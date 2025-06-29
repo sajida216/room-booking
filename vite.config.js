@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/booking-rooms",  // important for GitHub Pages
+   // important for GitHub Pages
+   // base: "/booking-rooms",
 })

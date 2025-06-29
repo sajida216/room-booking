@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '../Nav';
-import Img1 from '../../Images/room1.jpg';
+import Img1 from '../../Images/add cart.png';
 import axios from 'axios';
 
 const Addcart = () => {
