@@ -8,7 +8,8 @@ import App from './App.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode basename="/room-booking">
+  <StrictMode >
+    {/* basename="/room-booking" */}
     <App />
   </StrictMode>,
 )

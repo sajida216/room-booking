@@ -18,7 +18,7 @@ function App() {
     <Router>
       <ToastContainer position="bottom-center" autoClose={2000} />
       <Routes>
-        {/* <Route path="/room-booking" element={<RoomBooking />} /> */}
+        <Route path="/room-booking" element={<RoomBooking />} />
         <Route path="/" element={<Home />} />   
         <Route path="/aboutsite" element={<About />} /> 
         <Route path="/aboutrooms/:id" element={<AboutRooms />} />   
