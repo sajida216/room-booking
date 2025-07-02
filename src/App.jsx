@@ -15,7 +15,7 @@ import Features from './compenents/about/Placefeaters.jsx'
 function App() {
   return (
 
-    <Router>
+    <div>
       <ToastContainer position="bottom-center" autoClose={2000} />
       <Routes>
         {/* <Route path="/room-booking" element={<RoomBooking />} /> */}
@@ -28,7 +28,7 @@ function App() {
         <Route path="/cart" element={<Cart />} /> 
          <Route path="/features" element={< Features />} /> 
       </Routes>
-    </Router>
+    </div>
      
   )
 }
