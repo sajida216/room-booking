@@ -13,7 +13,7 @@ const Home = () => {
       </div>
       <div className='mt-5 ms-5'>
       <h2>Explore Our StayEase Listings Across Stunning Locations!</h2></div>
-      <div  class="pt-5 ms-5">
+      <div  className="pt-5 ms-5">
       <Card/>
       </div>
       <Expirience/>
