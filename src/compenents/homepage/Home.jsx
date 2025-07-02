@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Nav'
-import Searchbar from '../homepage/Searchbar.jsx'
+//import Searchbar from '../homepage/Searchbar.jsx'
 import Card from '../cards/Card.jsx'
 import Expirience from '../expirience/Expirience.jsx'
 import Footer from '../footer/Footer.jsx'

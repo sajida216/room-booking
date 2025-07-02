@@ -14,9 +14,9 @@ import Cart from './compenents/cart/Addcart.jsx'
 import Features from './compenents/about/Placefeaters.jsx'
 function App() {
   return (
-
+    <>
+     <ToastContainer position="bottom-center" autoClose={2000} />
       <Routes>
-        <ToastContainer position="bottom-center" autoClose={2000} />
         {/* <Route path="/room-booking" element={<RoomBooking />} /> */}
         <Route path="/" element={<Home />} />   
         <Route path="/aboutsite" element={<About />} /> 
@@ -27,7 +27,7 @@ function App() {
         <Route path="/cart" element={<Cart />} /> 
          <Route path="/features" element={< Features />} /> 
       </Routes>
-     
+     </>
   )
 }
 
