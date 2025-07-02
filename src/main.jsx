@@ -8,8 +8,9 @@ import App from './App.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode >
-    {/* basename="/room-booking" */}
+  <StrictMode>
+  <BrowserRouter basename="/room-booking">
     <App />
-  </StrictMode>,
+  </BrowserRouter>
+</StrictMode>
 )
