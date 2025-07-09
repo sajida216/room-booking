@@ -50,13 +50,13 @@ const Navbar = () => {
           </ul>
 
           <div className="d-flex align-items-center gap-3">
-            <Link to="/cart" className="btn btn-outline-dark btn-sm">
+            <Link to="/cart" className="btn btn-sm">
               Cart
             </Link>
-            <Link to="/login" className="btn btn-outline-dark btn-sm">
+            <Link to="/login" className="btn btn-sm">
               Login
             </Link>
-            <button onClick={handleLogout} className="btn btn-dark btn-sm">
+            <button onClick={handleLogout} className="btn  btn-sm">
               Logout
             </button>
           </div>
