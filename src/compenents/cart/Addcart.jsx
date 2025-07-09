@@ -13,7 +13,7 @@ const userId = localStorage.getItem('userId');
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-       const response = await axios.get(`http://localhost:5000/get-cart-items/${userId}`);
+       const response = await axios.get(`https://booking-backend-wb8a.onrender.com/get-cart-items/${userId}`);
         setBookingData(response.data); //  Now bookingData is an array
       } catch (error) {
         console.error("Error fetching bookings:", error);
