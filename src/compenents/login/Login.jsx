@@ -13,65 +13,33 @@ import { useNavigate } from 'react-router-dom';
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:5000/login', {
+      const res = await fetch('https://booking-backend-wb8a.onrender.com/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(credentials),
       });
 
-      // 1️⃣ handle non-200 responses first
+      //  handle non-200 responses first
       if (!res.ok) {
         const errMsg = (await res.json()).message || 'Login failed';
         alert(errMsg);
         return;
       }
 
-      // 2️⃣ parse JSON
+      //  parse JSON
       const data = await res.json();      // { message: 'Login successful', userId: '...' }
 
-      // 3️⃣ store userId
+      //  store userId
       localStorage.setItem('userId', data.userId);
 
-      // 4️⃣ give feedback & redirect
+      //  give feedback & redirect
       alert(data.message);                // or toast.success(data.message)
       navigate('/');                      // go to Home
     } catch (err) {
-      console.error('❌ Login Error:', err);
+      console.error(' Login Error:', err);
       alert('Something went wrong');
     }
   };
-//    const navigate = useNavigate(); // initialize navigate
-//   const [credentials, setCredentials] = useState({
-//     email: '',
-//     password: ''
-//   });
-
-//   const handleChange = (e) => {
-//     setCredentials({ ...credentials, [e.target.name]: e.target.value });
-//   };
-
-//   const handleLogin = async (e) => {
-//     e.preventDefault();
-
-//     try {
-//       const res = await fetch('http://localhost:5000/login', {
-//         method: 'POST',
-//         headers: { 'Content-Type': 'application/json' },
-//         body: JSON.stringify(credentials)
-//       });
-
-//       localStorage.setItem('userId', response.data.userId);
-      
-//       const data = await res.json();
-//      // alert(data.message);
-//         alert("✅ Login successful!");
-//         navigate('/'); // 👈 Redirect to Home page
-
-//     } catch (err) {
-//       console.error('❌ Login Error:', err);
-//       alert('Something went wrong');
-//     }
-//   };
 
   return (
     <div className="border border-secondary" style={{ maxWidth: '400px', margin: '40px auto', padding: "28px" }}>

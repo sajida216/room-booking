@@ -17,7 +17,7 @@ const Placefeaters = () => {
   }
    
   try {
-    const response = await axios.post('http://localhost:5000/bookings', {
+    const response = await axios.post('https://booking-backend-wb8a.onrender.com/bookings', {
       hotelName,
       checkInDate,
       checkOutDate,

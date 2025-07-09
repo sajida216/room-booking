@@ -26,7 +26,7 @@ const userId = localStorage.getItem('userId');
    //  Handle Delete
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/addcart/${id}`);
+      await axios.delete(`https://booking-backend-wb8a.onrender.com/addcart/${id}`);
       // Remove from frontend
       setBookingData(bookingData.filter(item => item._id !== id));
     } catch (error) {
