@@ -49,7 +49,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="d-flex align-items-center gap-3">
+          <div className="d-flex fs-5 align-items-center gap-3">
             <Link to="/cart" className="btn btn-sm">
               Cart
             </Link>
