@@ -21,7 +21,7 @@ const Expirience = () => {
     <div className='position-absolute ' style={{ top: "10%", left: "40%", zIndex: 1}}>
          <p className="fs-4">The Convenient Hotel</p>
          <p className="fs-3">Discover unforgettable experiences with every stay at our Hotels.</p>
-         <p style={{fontSize:"10px"}}>At StayFinder, we believe every stay should be more than just a place to rest. Our carefully curated hotels offer a perfect blend of comfort.</p>
+         <p style={{fontSize:"30px"}}>At StayFinder, we believe every stay should be more than just a place to rest. Our carefully curated hotels offer a perfect blend of comfort.</p>
     </div>
    
   </div>
