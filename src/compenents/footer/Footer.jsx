@@ -22,7 +22,7 @@ const Footer = () => {
         <Link  style={{ color: 'white',textDecoration: 'none' }}>Contact Us  |</Link >
         <Link  style={{ color: 'white',textDecoration: 'none' }}>Privacy Policy  |</Link >
         </div>
-         <div className=' flex justify-center pb-8'>
+         {/* <div className=' flex justify-center pb-8'>
          <div className=' flex w-6'>
          <img src={Insta}/>
          </div>
@@ -32,7 +32,7 @@ const Footer = () => {
          <div className='w-8 pl-2'>
           <img src={Twitter}/>
          </div>
-    </div>
+    </div> */}
       </div>
     </div>
   );
