@@ -49,14 +49,14 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="d-flex fs-5 align-items-center gap-3" style={{fontSize:"25%"}}>
-            <Link to="/cart" className="btn  fs-5 btn-sm">
+          <div className="d-flex fs-5 align-items-center gap-3" >
+            <Link to="/cart" className="btn  fs-5 btn-sm" style={{"fontSize":"25%"}}>
               Cart
             </Link>
-            <Link to="/login" className="btn fs-5  btn-sm">
+            <Link to="/login" className="btn fs-5  btn-sm" style={{"fontSize":"25%"}}>
               Login
             </Link>
-            <button onClick={handleLogout} className="btn fs-5  btn-sm">
+            <button onClick={handleLogout} className="btn fs-5  btn-sm" style={{"fontSize":"25%"}}>
               Logout
             </button>
           </div>
