@@ -49,7 +49,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="d-flex fs-5 align-items-center gap-3">
+          <div className="d-flex fs-5 align-items-center gap-3" style={{fontSize:"25%"}}>
             <Link to="/cart" className="btn  fs-5 btn-sm">
               Cart
             </Link>
