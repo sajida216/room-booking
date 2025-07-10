@@ -42,17 +42,40 @@ import { useNavigate } from 'react-router-dom';
   };
 
   return (
-    <div className="border border-secondary" style={{ maxWidth: '400px', margin: '40px auto', padding: "28px" }}>
-      <h2>Login Page</h2>
-      <form className='mt-5' onSubmit={handleLogin}>
-        <input name="email" type="email" placeholder="Email" className="form-control my-2" onChange={handleChange} />
-        <input name="password" type="password" placeholder="Password" className="form-control my-2" onChange={handleChange} />
-        <button  className="btn btn-primary w-100">Login</button>
-      </form>
-      <p className="text-center mt-3">
-        Don't have an account? <Link to="/register">Create Account</Link>
-      </p>
-    </div>
+    <div
+  className="border border-secondary rounded-4 shadow"
+  style={{
+    maxWidth: '400px',
+    margin: '80px auto',
+    padding: '32px',
+    backgroundColor: '#ffffff',
+  }}
+>
+  <h2 className="text-center mb-4">Login</h2>
+  <form onSubmit={handleLogin}>
+    <input
+      name="email"
+      type="email"
+      placeholder="Email"
+      className="form-control my-3 rounded-3"
+      onChange={handleChange}
+      required
+    />
+    <input
+      name="password"
+      type="password"
+      placeholder="Password"
+      className="form-control my-3 rounded-3"
+      onChange={handleChange}
+      required
+    />
+    <button className="btn btn-primary w-100 rounded-3 mt-2">Login</button>
+  </form>
+  <p className="text-center mt-4 mb-0">
+    Don’t have an account? <Link to="/register">Create Account</Link>
+  </p>
+</div>
+
   );
 };
 
