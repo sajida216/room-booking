@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Facebk from '../../Images/fac.png'
+import Insta from '../../Images/insta1.jpg'
+import Twitter from '../../Images/twitter.png'
 
 const Footer = () => {
   return (
@@ -19,6 +22,17 @@ const Footer = () => {
         <Link  style={{ color: 'white',textDecoration: 'none' }}>Contact Us  |</Link >
         <Link  style={{ color: 'white',textDecoration: 'none' }}>Privacy Policy  |</Link >
         </div>
+         <div className=' flex justify-center pb-8'>
+         <div className=' flex w-6'>
+         <img src={Insta}/>
+         </div>
+         <div>
+         <img src={Facebk} className='w-8  pl-2'/>
+         </div>
+         <div className='w-8 pl-2'>
+          <img src={Twitter}/>
+         </div>
+    </div>
       </div>
     </div>
   );
